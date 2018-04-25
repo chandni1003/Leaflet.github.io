@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Team</title>
+	<link rel="stylesheet" type="text/css" href="newteam.css">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant|Poiret+One" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+    	$("#submit").click(function(){
+    		alert("Details have been submitted, after verification, it will be added to the Map. Thank you!");
+    	});    	
+    	}); 
+	</script>
+</head>
+<body height="100%" >
+<div class= "menubar">
+<ul>
+  <li><a href="newteam.html">New Team</a></li>
+  <li><a href="newstadium.html">New Stadium</a></li>
+  <li><a href="index.html">Map</a></li>
+</ul>
+</div>
+<div id="myForm" class="form" action="/action_page.php">
+	<form action="index.html" method="GET">
+		<h1> New Stadium? Add the details here!</h1>
+		Stadium Name: <input type="text" name="sname" placeholder="Enter Stadium Name"><br><br>
+		City: <input type="text" name="city" placeholder="Enter Home City"><br><br>
+		Longitude (N/S): <input type="float" name="long" placeholder="Enter Longitude Coordinate of City" width="100%"><br><br>
+		Latitude (N/S): <input type="float" name="lat" placeholder="Enter Latitude Coordinate of City"><br><br>
+		Team Name: <input type="text" name="tname" placeholder="Enter Team Name"><br><br>
+		<button onclick="myFunction()" id="submit">Submit</button>
+	</form>
+</div>
+<script>
+function myFunction() {
+    document.getElementById("myForm").submit();
+}   
+</script>
+</body>
+</html>

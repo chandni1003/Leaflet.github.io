@@ -1,0 +1,80 @@
+html,body
+{
+	font-family: 'Poiret One', cursive;
+}
+
+#mapid 
+{ 
+	position: absolute;
+	top: 40px;
+	bottom: 0px;
+	right: 0;
+	left: 0;
+}
+
+.popup
+{
+	text-align: left;
+	background-color: #ece5b8;
+	border: 2px solid black;
+	padding: 10px;
+	font-family: 'Cormorant', serif;
+	font-size: 15px;
+	font-variant-numeric: 15px;
+	font-weight: bolder;
+}
+
+.popup1
+{
+	text-align: left;
+	background-color: #f7f9ea;
+	border: 2px solid black;
+	padding: 10px;
+	font-family: 'Cormorant', serif;
+	font-size: 15px;
+	font-weight: bolder;
+}
+
+.menubar
+{
+background-color: rgba(50,50,50,0.5);
+font-color: white;
+float: right;
+text-align: left;
+position:fixed;
+top:0%;
+width:100%;
+left:0%;
+right:10%;
+height: 40px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menubar li
+{
+	display: inline-block;
+	float: right;
+	padding: 0px;
+	margin-top: 0px;
+}
+.menubar a:link, a:visited {
+    background-color: rgba(50,50,50,0);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px;
+}
+
+.menubar a:hover {
+    background-color: rgba(50,50,50,0.5);
+    color: white;
+    text-decoration: underline;
+    font-weight: bolder;
+}

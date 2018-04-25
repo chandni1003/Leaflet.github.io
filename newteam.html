@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Team</title>
+	<link rel="stylesheet" type="text/css" href="newteam.css">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant|Poiret+One" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+    	$("#submit").click(function(){
+    		alert("Details have been submitted, after verification, it will be added to the Map. Thank you!");
+    	});    	
+    	}); 
+	</script>
+</head>
+<body>
+<div class= "menubar">
+<ul>
+  <li><a href="newteam.html">New Team</a></li>
+  <li><a href="newstadium.html">New Stadium</a></li>
+  <li><a href="index.html">Map</a></li>
+</ul>
+</div>
+<div class="form">
+	<form action="">
+		<h1> New Team? Add the details here!</h1>
+		Team Name:<input type="text" name="tname" placeholder="Enter Team Name"><br><br>
+		City: <input type="text" name="city" placeholder="Enter Home City"><br><br>
+		Longitude (N/S): <input type="number" name="long" placeholder="Enter Longitude Coordinate of City"><br><br>
+		Latitude (N/S): <input type="number" name="lat" placeholder="Enter Latitude Coordinate of City"><br><br>
+		Stadium Name: <input type="text" name="sname" placeholder="Enter Stadium Name"><br><br>
+		Joining Year: <input type="number" name="year" placeholder="Enter year of joining"><br><br>
+		Team Logo: <input type="file" name="pic" accept="image/png"><br><br>
+		<button onclick="myFunction()" id="submit">Submit</button>
+	</form>
+</div>
+<script>
+function myFunction() {
+    document.getElementById("myForm").submit();
+}   
+</script>
+</body>
+</html>

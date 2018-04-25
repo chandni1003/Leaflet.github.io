@@ -1,0 +1,80 @@
+html {
+  height: 100%;
+}
+html,body
+{
+    font-family: 'Poiret One', cursive;
+    background-image: url(bg.jpg);
+/*    height: 100%;
+    width: 100%;*/
+}
+
+.form
+{
+	border-radius: 5px;
+   background-color: rgba(50,50,50,0.7);
+    filter: blur();
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 340px;
+    width:50%;
+    font-family: 'Cormorant', serif;
+    color: white;
+}
+
+.menubar
+{background-color: rgba(50,50,50,0.7);
+font-color: white;
+float: right;
+text-align: left;
+position:fixed;
+top:0%;
+width:100%;
+left:0%;
+right:10%;
+height: 40px;
+}
+
+.menubar li
+{
+	display: inline-block;
+	float: right;
+	padding: 0px;
+	margin-top: 0px;
+}
+
+.menubar a:link, a:visited {
+    background-color: rgba(50,50,50,0.7);
+    color: white;
+    padding-right: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px;
+}
+
+.menubar a:hover {
+    background-color: rgba(50,50,50,0.5);
+    color: white;
+    text-decoration: underline;
+    opacity: 0.7;
+    font-weight: bolder;
+}
+
+#submit
+{
+    background-color: white;
+    color: #402C2B;
+    /*font-family: 'Amatic SC', cursive;*/
+    /*font-size: 30px;*/
+    /*margin-left: 42%;*/
+    font-weight: bold;
+    border-color: #402C2B;
+}
+#submit:hover
+{
+    background-color: #402C2B;
+    color: white;
+    font-weight: bolder;
+    border-color: white;
+}
